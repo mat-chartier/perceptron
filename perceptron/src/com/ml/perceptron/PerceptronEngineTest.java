@@ -25,8 +25,8 @@ public class PerceptronEngineTest {
 		PerceptronResult learn = engine.learn(trainingDataSet, trainingDataSet);
 		System.out.println(learn);
 		
-		System.out.println("Should be true : " + engine.classify(learn.getWeights(), new Integer[] {10, 8}));
-		System.out.println("Should be false : " + engine.classify(learn.getWeights(), new Integer[] {10, 0}));
+		System.out.println("Should be true : " + engine.classify(learn, new Integer[] {10, 8}));
+		System.out.println("Should be false : " + engine.classify(learn, new Integer[] {10, 0}));
 		
 	}
 	
